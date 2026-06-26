@@ -7,10 +7,10 @@ html
         a(href='./')
             h1 File Meta Data
         div
-            form(action='/upload' method='post' enctype='multipart/form-data')
+            form(action='/api/fileanalyse' method='post' enctype='multipart/form-data')
                 label.fileInput 
                     span Select File
-                    input(type='file', name='uploadFile',id='inputFile')
+                    input(type='file', name='upfile',id='inputFile')
                 label 
                     input(type='submit',value='Get File Size')
     script(src='./js/index.js')
